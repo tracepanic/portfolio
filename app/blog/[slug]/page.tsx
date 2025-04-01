@@ -79,7 +79,7 @@ export default async function BlogPost({ params }: Props) {
               alt={post.title}
               width={1200}
               height={675}
-              className="object-cover"
+              className="object-cover h-full"
               priority
             />
           </div>
