@@ -20,6 +20,10 @@ interface Props {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  return [{ id: "/blog/nestjs-role-based-access-control" }];
+}
+
 export default async function BlogPost({ params }: Props) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
