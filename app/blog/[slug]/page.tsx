@@ -16,12 +16,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-interface Props {
+type Props = {
   params: Promise<{ slug: string }>;
-}
+};
+
+export const dynamic = "force-static";
+export const revalidate = false;
 
 export async function generateStaticParams() {
-  return [{ id: "/blog/nestjs-role-based-access-control" }];
+  const posts = getAllPosts();
+  return posts.map((post) => ({ slug: post.slug }));
 }
 
 export default async function BlogPost({ params }: Props) {
