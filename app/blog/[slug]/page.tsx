@@ -17,16 +17,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface Props {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export default async function BlogPost({ params }: Props) {
-  const post = await getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
   const posts: PostMeta[] = getAllPosts();
   if (!post) return notFound();
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-  const fullUrl = `${siteUrl}/blog/${params.slug}`;
+  const fullUrl = `${siteUrl}/blog/${slug}`;
 
   return (
     <>
