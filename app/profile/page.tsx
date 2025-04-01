@@ -75,11 +75,11 @@ export default function Page() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                I'm a passionate full-stack developer with over 2 years of
+                I&apos;m a passionate full-stack developer with over 2 years of
                 experience building web applications. I specialize in React
                 &amp; Next.js for frontend and full stack apps. and Node.js
-                using Nest.js and Golang for backend. I'm always trying to learn
-                a technology or build something cool.
+                using Nest.js and Golang for backend. I&apos;m always trying to
+                learn a technology or build something cool.
               </p>
             </CardContent>
           </Card>

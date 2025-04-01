@@ -11,7 +11,7 @@ export default function NotFound() {
           <Image
             src="/404.svg"
             alt="Page Not Found"
-            className="object-contain" // Changed to object-contain to avoid overflow
+            className="object-contain"
             fill
             sizes="100"
             priority
@@ -24,8 +24,8 @@ export default function NotFound() {
           Oops! Page not found
         </h2>
         <p className="text-muted-foreground md:text-lg">
-          The page you're looking for doesn't exist or has been moved. Let's get
-          you back on track.
+          The page you&apos;re looking for doesn&apos;t exist or has been moved.
+          Let&apos;s get you back on track.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">

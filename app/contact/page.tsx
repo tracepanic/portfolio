@@ -17,7 +17,7 @@ export default function Page() {
         </h1>
         <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
           Have a project in mind or want to discuss a potential collaboration?
-          I'd love to hear from you.
+          I&apos;d love to hear from you.
         </p>
       </div>
 
@@ -71,7 +71,7 @@ export default function Page() {
             <CardHeader>
               <CardTitle>Office Hours</CardTitle>
               <CardDescription>
-                When I'm typically available for meetings.
+                When I&apos;m typically available for meetings.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-2">

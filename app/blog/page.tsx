@@ -1,14 +1,7 @@
 import { BlogCard } from "@/components/blog-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { getAllPosts } from "@/lib/md";
 import { PostMeta } from "@/types";
 import { Calendar, Clock } from "lucide-react";
