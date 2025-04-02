@@ -23,7 +23,13 @@ const PROJECTS: Project[] = [
     title: "Learn Sphere",
     description: "A full stack feature rich learning managment system (LMS)",
     image: "/projects/learn-sphere.png",
-    technologies: ["Next.js", "Nest.js", "Tailwind CSS", "Prisma"],
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "Nest.js",
+      "Tailwind CSS",
+      "Prisma",
+    ],
     github: "https://github.com/tracepanic/learn-sphere",
     demo: "https://learn-sphere-web.vercel.app",
     category: "web",
@@ -41,6 +47,29 @@ const PROJECTS: Project[] = [
     category: "games",
     featured: true,
   },
+  {
+    id: 3,
+    title: "Shadcn Date Range Picker",
+    description:
+      "An enhanced date range picker built with shadcn/ui — featuring multi-month views, text entry, preset ranges, responsive design and date range comparisons.",
+    image: "/projects/shadcn-date-range-picker.png",
+    technologies: ["TypeScript", "React.js", "Tailwind CSS"],
+    github: "https://github.com/tracepanic/shadcn-date-range-picker",
+    demo: "https://shadcn-date-range-picker.vercel.app",
+    category: "web",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description: "A blazingly fast and nicely designed portfolio website your currently viewing right now.",
+    image: "/projects/portfolio-website.png",
+    technologies: ["TypeScript", "Next.js", "Tailwind CSS"],
+    github: "https://github.com/tracepanic/portfolio",
+    demo: "https://tracepanic.com",
+    category: "web",
+    featured: false,
+  }
 ];
 
 const GENERAL_SKILLS: Skill[] = [

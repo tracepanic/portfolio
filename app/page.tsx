@@ -13,6 +13,7 @@ export default function Home() {
   const posts: PostMeta[] = getAllPosts();
 
   const latestPosts = posts.filter((post) => post.isLatest === true);
+  const featuredProjects = PROJECTS.filter((project) => project.featured === true);
 
   return (
     <div className="w-full">
@@ -79,7 +80,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-            {PROJECTS.map((project) => (
+            {featuredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
