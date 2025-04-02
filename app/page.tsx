@@ -122,11 +122,17 @@ export default function Home() {
           </div>
           <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 py-12 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
             {GENERAL_SKILLS.map((tech) => (
-              <div key={tech} className="flex flex-col items-center gap-2">
-                <div className="flex h-20 w-20 items-center justify-center rounded-full bg-muted p-4">
-                  <Code />
+              <div key={tech.id} className="flex flex-col items-center gap-2">
+                <div className="flex h-20 w-20 relative items-center justify-center p-4">
+                  <Image
+                    src={tech.icon}
+                    alt={`${tech.name} Image`}
+                    className="object-cover"
+                    fill
+                    sizes="50"
+                  />
                 </div>
-                <h3 className="text-center font-medium">{tech}</h3>
+                <h3 className="text-center font-medium">{tech.name}</h3>
               </div>
             ))}
           </div>

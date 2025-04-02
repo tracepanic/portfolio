@@ -24,3 +24,8 @@ export type PostMeta = {
 export type Post = PostMeta & {
   contentHtml: string;
 };
+export type Skill = {
+  id: number;
+  name: string;
+  icon: string;
+};

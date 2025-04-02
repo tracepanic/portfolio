@@ -1,4 +1,4 @@
-import { FooterLinks, HeaderNavs, Project } from "@/types";
+import { FooterLinks, HeaderNavs, Project, Skill } from "@/types";
 
 const HEADER_NAVS: HeaderNavs = [
   { id: 1, name: "Home", link: "/" },
@@ -43,16 +43,16 @@ const PROJECTS: Project[] = [
   },
 ];
 
-const GENERAL_SKILLS: string[] = [
-  "TypeScript",
-  "React.js",
-  "Next.js",
-  "Node.js",
-  "NestJS",
-  "Tailwind CSS",
-  "Golang",
-  "PostgreSQL",
-  "Git",
+const GENERAL_SKILLS: Skill[] = [
+  { id: 1, name: "TypeScript", icon: "/skills/typescript.svg" },
+  { id: 2, name: "React.js", icon: "/skills/react.svg" },
+  { id: 3, name: "Next.js", icon: "/skills/nextjs.svg" },
+  { id: 4, name: "Node.js", icon: "/skills/nodejs.svg" },
+  { id: 5, name: "NestJS", icon: "/skills/nestjs.svg" },
+  { id: 6, name: "Tailwind CSS", icon: "/skills/tailwindcss.svg" },
+  { id: 7, name: "Golang", icon: "/skills/golang.svg" },
+  { id: 8, name: "PostgreSQL", icon: "/skills/postgresql.svg" },
+  { id: 9, name: "Git", icon: "/skills/git.svg" },
 ];
 
 const EXPERIENCE = [

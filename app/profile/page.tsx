@@ -91,8 +91,8 @@ export default function Page() {
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {GENERAL_SKILLS.map((skill) => (
-                  <Badge key={skill} variant="secondary">
-                    {skill}
+                  <Badge key={skill.id} variant="secondary">
+                    {skill.name}
                   </Badge>
                 ))}
               </div>
