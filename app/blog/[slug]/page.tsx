@@ -12,6 +12,7 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -26,6 +27,30 @@ export const revalidate = false;
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
+}
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata,
+): Promise<Metadata> {
+  const { slug } = await params;
+  const posts = getAllPosts();
+  const post = posts.find((post) => post.slug === slug);
+  if (!post) return notFound();
+
+  const title = post.title;
+  const description = post.description;
+  const image = post.image;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [{ url: image }],
+    },
+  };
 }
 
 export default async function BlogPost({ params }: Props) {

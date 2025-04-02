@@ -5,8 +5,11 @@ import { Card } from "@/components/ui/card";
 import { getAllPosts } from "@/lib/md";
 import { PostMeta } from "@/types";
 import { Calendar, Clock } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = { title: "Blogs" };
 
 export default function Page() {
   const posts: PostMeta[] = getAllPosts();

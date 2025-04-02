@@ -11,8 +11,11 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { EXPERIENCE, GENERAL_SKILLS, PROJECTS, TECH_CATEGORIES } from "@/data";
 import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = { title: "About" };
 
 export default function Page() {
   return (

@@ -7,6 +7,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = { title: "Contact Me" };
 
 export default function Page() {
   return (
