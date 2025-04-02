@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description:
       "A passionate full-stack developer specializing in building exceptional digital experiences.",
     url: "https://tracepanic.com",
-    siteName: "My Website",
+    siteName: "Patrick Obama",
     images: [
       {
         url: "https://tracepanic.com/me.jpg",
