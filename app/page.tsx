@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { GENERAL_SKILLS, PROJECTS } from "@/data";
 import { getAllPosts } from "@/lib/md";
 import { PostMeta } from "@/types";
-import { ArrowRight, Code, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
