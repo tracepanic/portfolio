@@ -1,6 +1,6 @@
 ---
 title: "Handling Role-Based Access Control (RBAC) in NestJS"
-tags: ["New", "NestJS", "Authentication"]
+tags: ["NestJS", "Authentication"]
 slug: "nestjs-role-based-access-control"
 date: "2025-04-01"
 readTime: 9
