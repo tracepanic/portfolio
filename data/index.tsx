@@ -20,6 +20,24 @@ const FOOTER_LINKS: FooterLinks = [
 const PROJECTS: Project[] = [
   {
     id: 1,
+    title: "Link Space",
+    description:
+      "A platform to manage your links, notes and content and share them with others. Built for 2025 Nextjs global hackerthon",
+    image: "/projects/link-space.png",
+    technologies: [
+      "TypeScript",
+      "Next.js",
+      "Server Actions",
+      "Tailwind CSS",
+      "Prisma",
+    ],
+    github: "https://github.com/tracepanic/link-space",
+    demo: "https://spaces.tracepanic.com",
+    category: "web",
+    featured: true,
+  },
+  {
+    id: 2,
     title: "Learn Sphere",
     description: "A full stack feature rich learning managment system (LMS)",
     image: "/projects/learn-sphere.png",
@@ -36,7 +54,7 @@ const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: 2,
+    id: 3,
     title: "Open Craft",
     description:
       "A version of infinite craft game that you can play on the terminal, run as a telegram bot or as a backend web server for any client",
@@ -48,7 +66,7 @@ const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: 3,
+    id: 4,
     title: "Shadcn Date Range Picker",
     description:
       "An enhanced date range picker built with shadcn/ui — featuring multi-month views, text entry, preset ranges, responsive design and date range comparisons.",
@@ -60,16 +78,17 @@ const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    id: 4,
+    id: 5,
     title: "Portfolio Website",
-    description: "A blazingly fast and nicely designed portfolio website your currently viewing right now.",
+    description:
+      "A blazingly fast and nicely designed portfolio website your currently viewing right now.",
     image: "/projects/portfolio-website.png",
     technologies: ["TypeScript", "Next.js", "Tailwind CSS"],
     github: "https://github.com/tracepanic/portfolio",
     demo: "https://tracepanic.com",
     category: "web",
     featured: false,
-  }
+  },
 ];
 
 const GENERAL_SKILLS: Skill[] = [

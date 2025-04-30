@@ -1,5 +1,7 @@
 export type HeaderNavs = { id: number; name: string; link: string }[];
+
 export type FooterLinks = HeaderNavs;
+
 export type Project = {
   id: number;
   title: string;
@@ -11,6 +13,7 @@ export type Project = {
   featured?: boolean;
   category: "web" | "games";
 };
+
 export type PostMeta = {
   title: string;
   tags: string[];
@@ -21,9 +24,11 @@ export type PostMeta = {
   description: string;
   readTime: number;
 };
+
 export type Post = PostMeta & {
   contentHtml: string;
 };
+
 export type Skill = {
   id: number;
   name: string;
