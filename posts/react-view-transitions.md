@@ -4,7 +4,7 @@ tags: ["React", "Web APIs", "Animation"]
 slug: "react-view-transitions"
 date: "2025-10-19"
 readTime: 12
-image: "/blogs/react-view-transitions.webp"
+image: "/blogs/react-view-transitions.png"
 isLatest: true
 description: "Learn how to use React's experimental ViewTransition component to create smooth, native animations for route changes, element transitions, and list updates."
 ---
