@@ -128,6 +128,15 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta name="apple-mobile-web-app-title" content="Patrick Obama" />
+        <Script
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+          strategy="afterInteractive"
+          onLoad={() => {
+            if (typeof window !== 'undefined') {
+              (window as any).emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+            }
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -149,25 +158,6 @@ export default function RootLayout({
             </div>
           </InteractiveProvider>
         </ThemeProvider>
-      </body>
-    </html>
-  );
-}
-
-// EmailJS initialization
-const EmailJSInit: React.FC = () => {
-  return (
-    <Script
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-      strategy="afterInteractive"
-      onLoad={() => {
-        if (typeof window !== 'undefined') {
-          (window as any).emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
-        }
-      }}
-    />
-  );
-};
       </body>
     </html>
   );
