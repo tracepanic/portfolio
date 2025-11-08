@@ -1,3 +1,6 @@
+"use client";
+
+import React, { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -18,6 +21,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Project } from "@/types";
+import { Clock, Users, Eye, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
