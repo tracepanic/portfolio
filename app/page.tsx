@@ -1,5 +1,13 @@
+"use client";
+
+import { useState, useCallback } from "react";
 import { BlogCard } from "@/components/blog-card";
 import { ProjectCard } from "@/components/project-card";
+import { ProjectFilters } from "@/components/project-filters";
+import { QuickContact } from "@/components/quick-contact";
+import { AvailabilityStatus } from "@/components/availability-status";
+import { InteractiveStats } from "@/components/interactive-stats";
+import { FloatingChat } from "@/components/floating-chat";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { GENERAL_SKILLS, PROJECTS } from "@/data";
