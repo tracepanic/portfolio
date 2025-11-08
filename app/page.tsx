@@ -19,9 +19,18 @@ import Link from "next/link";
 
 export default function Home() {
   const posts: PostMeta[] = getAllPosts();
+  const [filteredProjects, setFilteredProjects] = useState(PROJECTS.filter((project) => project.featured === true));
 
   const latestPosts = posts.filter((post) => post.isLatest === true);
   const featuredProjects = PROJECTS.filter((project) => project.featured === true);
+
+  const handleFilteredProjects = useCallback((projects: any[]) => {
+    setFilteredProjects(projects.filter(project => project.featured === true));
+  }, []);
+
+  const handleScrollPosition = useCallback((scrollY: number) => {
+    // This can be used for scroll-based animations if needed
+  }, []);
 
   return (
     <div className="w-full">
