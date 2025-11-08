@@ -39,9 +39,9 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
           <div className="flex flex-col justify-center space-y-4">
             <div className="space-y-2">
-              <Badge className="px-2.5 pt-1 pb-0.5 mb-5 text-xs font-semibold cursor-default transition-colors bg-foreground hover:bg-foreground/80">
-                Available for hire
-              </Badge>
+              <div className="mb-5">
+                <AvailabilityStatus />
+              </div>
               <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                 Hi, I&apos;m <span className="text-primary">Patrick Obama</span>
               </h1>
@@ -66,6 +66,11 @@ export default function Home() {
                   <Mail className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
+            </div>
+
+            {/* Quick Contact Widget */}
+            <div className="mt-8">
+              <QuickContact />
             </div>
           </div>
           <div className="flex items-center justify-center">
