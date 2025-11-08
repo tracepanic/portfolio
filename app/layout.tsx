@@ -138,15 +138,36 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="relative flex min-h-screen flex-col">
-            <Header />
-            <main className="container border-x border-dashed mx-auto min-h-dvh">
-              {children}
-            </main>
-            <Footer />
-            <Toaster />
-          </div>
+          <InteractiveProvider>
+            <div className="relative flex min-h-screen flex-col">
+              <Header />
+              <main className="container border-x border-dashed mx-auto min-h-dvh">
+                {children}
+              </main>
+              <Footer />
+              <Toaster />
+            </div>
+          </InteractiveProvider>
         </ThemeProvider>
+      </body>
+    </html>
+  );
+}
+
+// EmailJS initialization
+const EmailJSInit: React.FC = () => {
+  return (
+    <Script
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      strategy="afterInteractive"
+      onLoad={() => {
+        if (typeof window !== 'undefined') {
+          (window as any).emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
+        }
+      }}
+    />
+  );
+};
       </body>
     </html>
   );
