@@ -201,6 +201,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Floating Chat Assistant */}
+      <FloatingChat onScrollPosition={handleScrollPosition} />
     </div>
   );
 }
