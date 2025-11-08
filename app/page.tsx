@@ -101,8 +101,15 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          {/* Project Filters */}
+          <ProjectFilters
+            projects={PROJECTS}
+            onFilteredProjects={handleFilteredProjects}
+          />
+
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project) => (
+            {filteredProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
