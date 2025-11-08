@@ -137,6 +137,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Interactive Stats */}
+      <InteractiveStats />
+
       {/* Tech Stack */}
       <section className="w-full border-t border-dashed py-12 md:py-24 lg:py-32 bg-background">
         <div className="container px-4 md:px-6">
