@@ -12,6 +12,11 @@ export type Project = {
   demo: string;
   featured?: boolean;
   category: "web" | "games";
+  projectType: "Web Application" | "Mobile App" | "API" | "E-commerce" | "SaaS";
+  status: "Completed" | "In Progress" | "Prototype";
+  clientType: "Startup" | "Enterprise" | "Individual" | "Open Source";
+  duration: string;
+  teamSize: string;
 };
 
 export type PostMeta = {
