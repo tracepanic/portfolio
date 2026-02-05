@@ -10,7 +10,7 @@ function Home() {
       <div>
         <h1 className="text-2xl font-semibold">Patrick Obama</h1>
         <p className="mt-2">
-          Full-stack developer. I build tools, write things down.
+          Full-stack developer. I build tools, and secure, perfomant web apps.
         </p>
       </div>
 

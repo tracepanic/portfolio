@@ -12,7 +12,7 @@ function Work() {
       </Link>
 
       <div className="mt-10">
-        <h1 className="text-lg font-semibold">Work Experince</h1>
+        <h1 className="text-lg font-semibold">Work Experience</h1>
 
         <div className="space-y-8 mt-5 ml-2 text-sm">
           <div>
