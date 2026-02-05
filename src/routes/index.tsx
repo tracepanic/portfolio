@@ -9,7 +9,7 @@ function Home() {
     <>
       <div>
         <h1 className="text-2xl font-semibold">Patrick Obama</h1>
-        <p className="mt-2">
+        <p className="mt-2 max-w-prose">
           Full-stack developer building secure, performant web applications with
           Next.js, NestJS, TanStack, TypeScript and PostgreSQL.
         </p>
