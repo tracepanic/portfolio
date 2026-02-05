@@ -10,7 +10,8 @@ function Home() {
       <div>
         <h1 className="text-2xl font-semibold">Patrick Obama</h1>
         <p className="mt-2">
-          Full-stack developer. I build tools, and secure, perfomant web apps.
+          Full-stack developer building secure, performant web applications with
+          Next.js, NestJS, TanStack, TypeScript and PostgreSQL.
         </p>
       </div>
 
@@ -51,7 +52,7 @@ function Home() {
       <div className="pt-5 mt-20 border-t border-gray-200">
         <p className="text-xs mb-2">Recent Changes</p>
         <ul className="space-y-1 text-sm">
-          <li>2026-02-01 — Redesign portfolio</li>
+          <li>2026-02-04 — Redesign portfolio</li>
         </ul>
       </div>
     </>
