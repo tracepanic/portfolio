@@ -40,13 +40,6 @@ function Home() {
           </li>
           <li>
             →{" "}
-            <Link to="/blog" className="underline">
-              blog
-            </Link>
-            : longer writing
-          </li>
-          <li>
-            →{" "}
             <Link to="/contact" className="underline">
               contact
             </Link>
@@ -58,12 +51,7 @@ function Home() {
       <div className="pt-5 mt-20 border-t border-gray-200">
         <p className="text-xs mb-2">Recent Changes</p>
         <ul className="space-y-1 text-sm">
-          <li>
-            2026-02-01 —{" "}
-            <Link to="." className="underline">
-              New post about X
-            </Link>
-          </li>
+          <li>2026-02-01 — Redesign portfolio</li>
         </ul>
       </div>
     </>
