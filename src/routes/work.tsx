@@ -17,7 +17,7 @@ function Work() {
         <div className="space-y-8 mt-5 ml-2 text-sm">
           <div>
             <p className="font-semibold">
-              Documentation Engineer (Jan 2026 — Present)
+              Frontend & Docs Engineer (Jan 2026 — Present)
             </p>
             <p className="text-gray-600">
               <a
