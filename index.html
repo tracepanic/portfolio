@@ -3,56 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="theme-color" content="#000000" />
 
-    <!-- Primary Meta Tags -->
-    <title>Patrick Obama - Portfolio | Full-Stack Developer</title>
+    <!-- Apply the saved / system theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var dark = stored
+            ? stored === "dark"
+            : window.matchMedia("(prefers-color-scheme: dark)").matches;
+          if (dark) document.documentElement.classList.add("dark");
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="color-scheme" content="light dark" />
     <meta
-      name="title"
-      content="Patrick Obama - Portfolio | Full-Stack Developer"
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#fafafa"
     />
     <meta
-      name="description"
-      content="Explore my portfolio of full-stack development projects. Specialized in Next.js, TanStack, and TypeScript."
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#0c0c0c"
     />
+
+    <!-- Title & description are managed per-route via TanStack Router's head API.
+         Static social/canonical tags below are for crawlers that don't run JS. -->
+    <meta name="author" content="Patrick Obama" />
     <meta
       name="keywords"
       content="portfolio, full-stack developer, nextjs, tanstack, typescript, react, patrick obama"
     />
-    <meta name="author" content="Patrick Obama" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tracepanic.com/" />
     <meta
       property="og:title"
-      content="Patrick Obama - Portfolio | Full-Stack Developer"
+      content="Patrick Obama — Frontend & Docs Engineer"
     />
     <meta
       property="og:description"
-      content="Explore my portfolio of full-stack development projects. Specialized in Next.js, TanStack, and TypeScript."
+      content="Full-stack developer building secure, performant web applications with Next.js, NestJS, TanStack, TypeScript and PostgreSQL."
     />
-    <meta property="og:image" content="https://tracepanic.com/og-image.jpg" />
+    <meta property="og:image" content="https://tracepanic.com/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://tracepanic.com/" />
     <meta
       name="twitter:title"
-      content="Patrick Obama - Portfolio | Full-Stack Developer"
+      content="Patrick Obama — Frontend & Docs Engineer"
     />
     <meta
       name="twitter:description"
-      content="Explore my portfolio of full-stack development projects. Specialized in Next.js, TanStack, and TypeScript."
+      content="Full-stack developer building secure, performant web applications with Next.js, NestJS, TanStack, TypeScript and PostgreSQL."
     />
-    <meta name="twitter:image" content="https://tracepanic.com/og-image.jpg" />
+    <meta name="twitter:image" content="https://tracepanic.com/og.png" />
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://tracepanic.com/" />
-
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
     <div id="app"></div>

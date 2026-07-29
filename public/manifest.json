@@ -1,0 +1,17 @@
+{
+  "name": "Patrick Obama — Portfolio",
+  "short_name": "Patrick Obama",
+  "description": "Full-stack developer building secure, performant web applications.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#0c0c0c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    }
+  ]
+}

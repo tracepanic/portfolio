@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { site } from "@/data/site";
 
 export const Route = createFileRoute("/contact")({
+  head: () => ({ meta: [{ title: `Contact — ${site.name}` }] }),
   component: Contact,
 });
 
@@ -16,38 +18,38 @@ function Contact() {
 
         <div className="space-y-4 mt-5 ml-2 text-sm">
           <div>
-            <p className="text-gray-600 mb-1">Email</p>
-            <a href="mailto:patrickobamascript@gmail.com" className="underline">
-              patrickobamascript@gmail.com
+            <p className="text-muted mb-1">Email</p>
+            <a href={`mailto:${site.email}`} className="underline">
+              {site.email}
             </a>
           </div>
 
           <div>
-            <p className="text-gray-600 mb-1">GitHub</p>
+            <p className="text-muted mb-1">GitHub</p>
             <a
-              href="https://github.com/tracepanic"
+              href={site.github}
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/tracepanic
+              github.com/{site.githubHandle}
             </a>
           </div>
 
           <div>
-            <p className="text-gray-600 mb-1">LinkedIn</p>
+            <p className="text-muted mb-1">LinkedIn</p>
             <a
-              href="https://www.linkedin.com/in/patrick-obama-8269152bb"
+              href={site.linkedin}
               className="underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              https://www.linkedin.com/in/patrick-obama-8269152bb
+              {site.linkedin}
             </a>
           </div>
         </div>
 
-        <div className="pt-5 mt-20 border-t border-gray-200">
+        <div className="pt-5 mt-20 border-t border-border">
           <p className="text-sm">Response time: usually within 24 hours.</p>
         </div>
       </div>
